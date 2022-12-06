@@ -60,7 +60,7 @@ footer img {
     border: 1px solid var(--White)
 }
 
-footer {
+.one  {
     display: flex;
     flex-direction: row;
     align-items: center;
