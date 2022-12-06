@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --CyanT: hsla(178, 100%, 50%, 0.481);
+    /** (main BG)**/
+    --VeryDarkBlue: hsl(217, 54%, 11%);
+    /**(card BG)**/
+    --VeryDarkBlueCbg: hsl(216, 50%, 16%);
+    --VeryDarkBlueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Gray: rgb(114, 138, 174);
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    color: var(--Gray);
+    font-weight: 300;
+}
+
+.image {
+    width: 282px;
+    height: 282px;
+    background: url("images/image-equilibrium.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container {
+    margin: 65px auto 30px;
+    padding: 18px 25px 10px 26px;
+    width: 333px;
+    height: 548px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--VeryDarkBlueCbg);
+    border-radius: 15px;
+    justify-content: space-evenly;
+    box-shadow: -8px 22px 10px rgba(3, 0, 9, 0.331), 8px 22px 10px rgba(3, 0, 9, 0.331);
+
+}
+
+footer img {
+
+    margin-right: 20px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid var(--White)
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+}
+
+footer span {
+    color: var(--White);
+    font-weight: 400;
+
+}
+
+.content {
+    width: 333px;
+    margin: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info img {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+h1 {
+    font-size: 20px;
+    color: var(--White);
+    font-weight: 600;
+}
+
+hr {
+    height: 1px;
+    color: var(--VeryDarkBlueLine);
+}
+
+.eth {
+    font-weight: 400;
+    color: var(--Cyan);
+}
+
+.name:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.capa {
+    width: 100%;
+    height: 100%;
+    background: url(/images/icon-view.svg);
+    background-color: var(--CyanT);
+    background-repeat: no-repeat;
+    background-position: center center;
+    visibility: hidden;
+}
+
+section:hover>.capa {
+    visibility: visible;
+}
+
+/************attribution**************/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
